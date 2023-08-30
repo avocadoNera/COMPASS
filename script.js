@@ -112,8 +112,8 @@ document.getElementById("set-border").addEventListener("click", function() {
 		return;
 	}
 
-	border_rank_bronze = check_rank;
-	border_pt_bronze   = check_BP;
+	border_rank = check_rank;
+	border_pt   = check_BP;
 
 	update_value();
 });
@@ -163,11 +163,11 @@ function update_value() {
 	console.log("??");
 	let is_win_rate_over = false;
 
-	//calc wins_needed_bronze
+	//calc wins_needed
 	let now_rank      = rank;
 	let now_pt        = winP;
 	let now_all_pt    = rank * 500 + winP;
-	let border_all_pt = border_rank_bronze * 500 + border_pt_bronze;
+	let border_all_pt = border_rank * 500 + border_pt;
 	let cnt           = 0;
 	while(true){
 		if(now_all_pt >= border_all_pt) break;
@@ -183,7 +183,7 @@ function update_value() {
 
 		cnt++;
 	}
-	wins_needed_bronze = cnt;
+	wins_needed = cnt;
 	cnt = 0;
 	now_all_pt = rank * 500 + winP;
 
@@ -244,14 +244,11 @@ function update_value() {
 
 	if(is_win_rate_over) {
 		document.getElementById('battles_needed').innerHTML = "現在の勝率ではボーダー越えは厳しいです";
-		document.getElementById('battle').innerHTML = "";
 	} else {
-		document.getElementById('battles_needed').innerHTML = battles_needed;
-		document.getElementById('battle').innerHTML = "戦";
+		document.getElementById('battles_needed').innerHTML = battles_needed + "戦";
 	}
 
-	document.getElementById('win_rate').innerHTML = win_rate;
-	document.getElementById('wins_needed_bronze').innerHTML = wins_needed_bronze;
-	document.getElementById('border_rank_bronze').innerHTML = border_rank_bronze;
-	document.getElementById('border_pt_bronze').innerHTML = border_pt_bronze;
+	document.getElementById('win_rate').innerHTML = win_rate + "%";
+	document.getElementById('wins_needed').innerHTML = wins_needed + "勝";
+	document.getElementById('rank-and-BP').innerHTML = "S" + border_rank + "-" + border_pt;
 };

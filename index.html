@@ -12,16 +12,30 @@
 	<div id="BPChartContainer"><canvas id="BPChart"></canvas></div>
 
 	<div class="center">
-		<button id="plus">+</button>
-		<button id="win">WIN</button>
-		<button id="lose">LOSE</button>
-		<button id="minus">-</button>
-		<br>
-		<span>【銅アイコンボーダー】<span style="font-weight: bold;">S</span></span><span id="border_rank_bronze" style="font-weight: bold;"></span><span>　</span><span id="border_pt_bronze" style="font-weight: bold;"></span>
-		<br><span>【銅アイコンまであと】　　</span><span id="wins_needed_bronze" style="font-weight: bold;"></span><span>勝</span>
-		<br><span>【必要バトル数】　　　　</span><span id="battles_needed" style="font-weight: bold;"></span><span id="battle">戦</span>
-		<br><span>【勝率】　　　　　　　　　</span><span id="win_rate" style="font-weight: bold;"></span><span>％</span>
-		<br>
+
+		<div class="flex">
+			<button id="plus">+</button>
+			<button id="win">WIN</button>
+			<button id="lose">LOSE</button>
+			<button id="minus">-</button>
+		</div>
+
+		<div class="flex2">
+			<div class="item">ボーダー</div>
+			<div id="rank-and-BP"></div>
+		</div>
+		<div class="flex2">
+			<div class="item">必要な勝数</div>
+			<div id="wins_needed"></div>
+		</div>
+		<div class="flex2">
+			<div class="item">必要なバトル数(推定)</div>
+			<div id="battles_needed"></div>
+		</div>
+		<div class="flex2">
+			<div class="item">勝率</div>
+			<div id="win_rate"></div>
+		</div>
 		<br>
 		<label>[ボーダー設定]　　RANK
 			<select id="border-rank">

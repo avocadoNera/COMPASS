@@ -1,11 +1,112 @@
+/* ======================== common ======================== */
+.flex {
+	display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+	justify-content:space-around;
+	padding: 0px 30px 0px 30px;
+	margin: 0px 0px 20px 0px;
+	height: 25px;
+}
+
+.flex2 {
+	display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+	justify-content:space-between;
+	padding: 0px 40px;
+}
+
+.item {
+	color: #f00;
+}
+
 /* ======================== smartphone ======================== */
 @media screen and (max-width: 400px) {
 
+	.center { /*コンテンツ全てを中央に揃える*/
+		text-align: center;
+		padding: 20px 0;
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	#BPChartContainer {
+		max-width: 700px;
+		margin: 0 auto;
+	}
+
+	#win, #lose, #plus, #minus {
+		display: inline-block;
+		transition: background-color 0.3s ease;
+		color: #fff;
+		font-weight: bold;
+		text-align: center;
+		letter-spacing: 1px;
+		border-radius: 5px;
+		border: none;
+		margin: 0px 5px 0px 5px;
+		/* padding: 10px 20px; */
+		/* margin: 5px 5px 40px 10px; */
+	}
+
+	#win, #lose {
+		flex-grow: 3;
+	}
+
+	#plus, #minus {
+		width: 25px;
+
+	}
+
+	#win {background-color: #fa0;}
+	#win:hover {background-color: #f80;}
+
+	#plus {
+		background-color: #fa0;
+	}
+	#plus:hover {background-color: #f80;}
+
+	#lose {background-color: #0af;}
+	#lose:hover {background-color: #08f;}
+
+	#minus {
+		background-color: #0af;
+	}
+	#minus:hover {background-color: #08f;}
+
+	label {
+		display: inline;
+		align-items: center;
+	}
+
+	input [type="number"] {
+		margin: 0px 20px 0px 5px;
+	}
+
+	input [type="number"] #value-win-rate {
+		margin: 0px 0px 0px 5px;
+	}
+	
+	select {
+		margin: 0px 20px 0px 5px;
+	}
+
+	#border-BP, #value-BP, #value-win-rate {
+		width: 3em;
+	}
+
 }
+
 /* ======================== tablet ======================== */
 @media screen and (min-width: 600px) and (max-width: 1024px) {
 
 }
+
 /* ======================== pc ======================== */
 @media screen and (min-width: 1024px) {
 
