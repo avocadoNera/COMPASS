@@ -27,12 +27,12 @@
 			<div id="rank-and-BP"></div>
 		</div>
 		<div class="flex2">
-			<div class="item">必要な勝数</div>
-			<div id="wins_needed"></div>
-		</div>
-		<div class="flex2">
 			<div class="item">勝率</div>
 			<div id="win_rate"></div>
+		</div>
+		<div class="flex2">
+			<div class="item">必要な勝数</div>
+			<div id="wins_needed"></div>
 		</div>
 		<div class="flex2">
 			<div class="item">必要なバトル数(推定)</div>
@@ -41,8 +41,8 @@
 		<br>
 		<p>ボーダー設定</p>
 		<label>
-			<div class="flex2">
-				<div>
+			<div class="flex3">
+				<div class="flex-item">
 					<select id="border-rank">
 						<option value="" hidden disabled selected>RANK</option>
 						<option value="S1">S1</option>
@@ -56,10 +56,10 @@
 						<option value="S9">S9</option>
 					</select>
 				</div>
-				<div>
+				<div class="flex-item">
 					<input type="number" id="border-BP" placeholder="BP" onkeyup="value = value.length > 3 ? value.slice(0,3): value;" max="499" size="3" />
 				</div>
-				<div>
+				<div class="flex-item-last">
 					<input type="button" value="SET" id="set-border">
 				</div>
 			</div>
@@ -67,9 +67,9 @@
 		<br>
 		<p>ランク・BP設定</p>
 		<label>
-			<div class="flex2">
-				<div>
-					<select id="border-rank">
+			<div class="flex3">
+				<div class="flex-item">
+					<select id="value-rank">
 						<option value="" hidden disabled selected>RANK</option>
 						<option value="S1">S1</option>
 						<option value="S2">S2</option>
@@ -82,18 +82,25 @@
 						<option value="S9">S9</option>
 					</select>
 				</div>
-				<div>
-					<input type="number" id="border-BP" placeholder="BP" onkeyup="value = value.length > 3 ? value.slice(0,3): value;" max="499" size="3" />
+				<div class="flex-item">
+					<input type="number" id="value-BP" placeholder="BP" onkeyup="value = value.length > 3 ? value.slice(0,3): value;" max="499" size="3" />
+				</div>
+				<div class="flex-item-last">
+					<input type="button" value="SET" id="set-rank-and-BP">
 				</div>
 			</div>
-			<input type="button" value="SET" id="set-rank-and-BP">
 		</label>
 		<br>
-		<p>勝率設定</p>
+		<p>勝率設定(%)</p>
 		<label>
-			<input type="number" id="value-win-rate" onkeyup="value = value.length > 3 ? value.slice(0,3): value;" max="100" size="3" />
-			<span>%</span>
-			<input type="button" value="SET" id="set-win-rate">
+			<div class="flex3">
+				<div class="flex-item">
+					<input type="number" id="value-win-rate" placeholder="1~100" onkeyup="value = value.length > 3 ? value.slice(0,3): value;" max="100" size="3" />
+				</div>
+				<div class="flex-item-last">
+					<input type="button" value="SET" id="set-win-rate">
+				</div>
+			</div>
 		</label>
 	</div>
 	<script src="common.js"></script>
