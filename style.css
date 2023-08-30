@@ -25,8 +25,43 @@
 	color: #f00;
 }
 
+#set-win-rate, #set-rank-and-BP, #set-border {
+	background-color: #000;
+	display: inline-block;
+	transition: background-color 0.3s ease;
+	color: #fff;
+	font-weight: bold;
+	letter-spacing: 1px;
+	border-radius: 5px;
+	border: none;
+	padding: 5px 10px;
+}
+
+#border-BP, #border-rank {
+	position: relative;
+	font-family: inherit;
+	background-color: transparent;
+	width: 100%;
+	border-radius: 0;
+	border: none;
+	border-bottom: 1px solid #777;
+}
+
+#border-BP {
+	width: 60px;
+}
+
+#border-rank {
+	color: #777;
+	width: 60px;
+}
+
 /* ======================== smartphone ======================== */
 @media screen and (max-width: 400px) {
+
+	html {
+		font-size: 14px;
+	}
 
 	.center { /*コンテンツ全てを中央に揃える*/
 		text-align: center;
@@ -84,21 +119,9 @@
 		align-items: center;
 	}
 
-	input [type="number"] {
-		margin: 0px 20px 0px 5px;
-	}
-
-	input [type="number"] #value-win-rate {
-		margin: 0px 0px 0px 5px;
-	}
-	
-	select {
-		margin: 0px 20px 0px 5px;
-	}
-
-	#border-BP, #value-BP, #value-win-rate {
+	/* #border-BP, #value-BP, #value-win-rate {
 		width: 3em;
-	}
+	} */
 
 }
 

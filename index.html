@@ -8,6 +8,8 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
 </head>
 <body>
+	<a href="https://github.com/avocadoNera/COMPASS/blob/main/README.md">使い方</a>
+
 	<!-- donut chart rendering -->
 	<div id="BPChartContainer"><canvas id="BPChart"></canvas></div>
 
@@ -29,56 +31,70 @@
 			<div id="wins_needed"></div>
 		</div>
 		<div class="flex2">
-			<div class="item">必要なバトル数(推定)</div>
-			<div id="battles_needed"></div>
-		</div>
-		<div class="flex2">
 			<div class="item">勝率</div>
 			<div id="win_rate"></div>
 		</div>
+		<div class="flex2">
+			<div class="item">必要なバトル数(推定)</div>
+			<div id="battles_needed"></div>
+		</div>
 		<br>
-		<label>[ボーダー設定]　　RANK
-			<select id="border-rank">
-				<option value="S1">S1</option>
-				<option value="S2">S2</option>
-				<option value="S3">S3</option>
-				<option value="S4">S4</option>
-				<option value="S5">S5</option>
-				<option value="S6">S6</option>
-				<option value="S7">S7</option>
-				<option value="S8">S8</option>
-				<option value="S9">S9</option>
-			</select>
-			BP<input type="number" id="border-BP" onkeyup="value = value.length > 3 ? value.slice(0,3): value;" max="499" size="3" />
-			<input type="button" value="設定" id="set-border">
+		<p>ボーダー設定</p>
+		<label>
+			<div class="flex2">
+				<div>
+					<select id="border-rank">
+						<option value="" hidden disabled selected>RANK</option>
+						<option value="S1">S1</option>
+						<option value="S2">S2</option>
+						<option value="S3">S3</option>
+						<option value="S4">S4</option>
+						<option value="S5">S5</option>
+						<option value="S6">S6</option>
+						<option value="S7">S7</option>
+						<option value="S8">S8</option>
+						<option value="S9">S9</option>
+					</select>
+				</div>
+				<div>
+					<input type="number" id="border-BP" placeholder="BP" onkeyup="value = value.length > 3 ? value.slice(0,3): value;" max="499" size="3" />
+				</div>
+				<div>
+					<input type="button" value="SET" id="set-border">
+				</div>
+			</div>
 		</label>
 		<br>
-		<br>
-		<label>[ランク・BP設定]　RANK
-			<select id="value-rank">
-				<option value="S1">S1</option>
-				<option value="S2">S2</option>
-				<option value="S3">S3</option>
-				<option value="S4">S4</option>
-				<option value="S5">S5</option>
-				<option value="S6">S6</option>
-				<option value="S7">S7</option>
-				<option value="S8">S8</option>
-				<option value="S9">S9</option>
-			</select>
-			BP<input type="number" id="value-BP" onkeyup="value = value.length > 3 ? value.slice(0,3): value;" max="499" size="3" />
-			<input type="button" value="設定" id="set-rank-and-BP">
+		<p>ランク・BP設定</p>
+		<label>
+			<div class="flex2">
+				<div>
+					<select id="border-rank">
+						<option value="" hidden disabled selected>RANK</option>
+						<option value="S1">S1</option>
+						<option value="S2">S2</option>
+						<option value="S3">S3</option>
+						<option value="S4">S4</option>
+						<option value="S5">S5</option>
+						<option value="S6">S6</option>
+						<option value="S7">S7</option>
+						<option value="S8">S8</option>
+						<option value="S9">S9</option>
+					</select>
+				</div>
+				<div>
+					<input type="number" id="border-BP" placeholder="BP" onkeyup="value = value.length > 3 ? value.slice(0,3): value;" max="499" size="3" />
+				</div>
+			</div>
+			<input type="button" value="SET" id="set-rank-and-BP">
 		</label>
 		<br>
-		<br>
-		<label>[勝率設定]　　　　　　　　　　　　
+		<p>勝率設定</p>
+		<label>
 			<input type="number" id="value-win-rate" onkeyup="value = value.length > 3 ? value.slice(0,3): value;" max="100" size="3" />
-			<span>％　</span>
-			<input type="button" value="設定" id="set-win-rate">
+			<span>%</span>
+			<input type="button" value="SET" id="set-win-rate">
 		</label>
-		<br>
-		<br>
-		<a href="https://github.com/avocadoNera/COMPASS/blob/main/README.md">つかいかた</a>
 	</div>
 	<script src="common.js"></script>
 	<script src="script.js"></script>
