@@ -1,0 +1,135 @@
+/* ======================== smartphone ======================== */
+@media screen and (max-width: 400px) {
+
+}
+/* ======================== tablet ======================== */
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+
+}
+/* ======================== pc ======================== */
+@media screen and (min-width: 1024px) {
+
+	.center {
+		text-align: center;
+		padding: 40px 0;
+		width: 80%;
+		margin: 0 auto;
+	}
+
+	#BPChartContainer {
+		max-width: 700px;
+		margin: 0 auto;
+	}
+
+	#win {
+		display: inline-block;
+		padding: 10px 20px;
+		margin: 5px 5px 40px 10px;
+		border: none;
+		background-color: #fa0;
+		color: #fff;
+		font-size: 2vw;
+		font-weight: bold;
+		text-align: center;
+		text-decoration: none;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		border-radius: 5px;
+		transition: background-color 0.3s ease;
+		cursor: pointer;
+		width: 15%;
+	}
+	
+	#win:hover {
+		background-color: #f80;
+	}
+
+	#plus {
+		display: inline-block;
+		border: none;
+		background-color: #fa0;
+		color: #fff;
+		font-size: 2vw;
+		font-weight: bold;
+		text-align: center;
+		text-decoration: none;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		border-radius: 5px;
+		transition: background-color 0.3s ease;
+		cursor: pointer;
+		width: 4%;
+		padding: 5px;
+	}
+	
+	#plus:hover {
+		background-color: #f80;
+	}
+
+	#lose {
+		display: inline-block;
+		padding: 10px 20px;
+		margin: 5px 10px 40px;
+		border: none;
+		background-color: #0af;
+		color: #fff;
+		font-size: 2vw;
+		font-weight: bold;
+		text-align: center;
+		text-decoration: none;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		border-radius: 5px;
+		transition: background-color 0.3s ease;
+		cursor: pointer;
+		width: 15%;
+	}
+	
+	#lose:hover {
+		background-color: #08f;
+	}
+
+	#minus {
+		display: inline-block;
+		border: none;
+		background-color: #0af;
+		color: #fff;
+		font-size: 2vw;
+		font-weight: bold;
+		text-align: center;
+		text-decoration: none;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		border-radius: 5px;
+		transition: background-color 0.3s ease;
+		cursor: pointer;
+		width: 4%;
+		padding: 5px;
+	}
+	
+	#minus:hover {
+		background-color: #08f;
+	}
+
+	label {
+		display: inline;
+		align-items: center;
+	}
+
+	input [type="number"] {
+		margin: 0px 20px 0px 5px;
+	}
+
+	input [type="number"] #value-win-rate {
+		margin: 0px 0px 0px 5px;
+	}
+	
+	select {
+		margin: 0px 20px 0px 5px;
+	}
+
+	#border-BP, #value-BP, #value-win-rate {
+		width: 3em;
+	}
+
+}

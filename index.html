@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+	<title>compass</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
+</head>
+<body>
+	<!-- donut chart rendering -->
+	<div id="BPChartContainer"><canvas id="BPChart"></canvas></div>
+
+	<div class="center">
+		<button id="plus">+</button>
+		<button id="win">WIN</button>
+		<button id="lose">LOSE</button>
+		<button id="minus">-</button>
+		<br>
+		<span>【銅アイコンボーダー】<span style="font-weight: bold;">S</span></span><span id="border_rank_bronze" style="font-weight: bold;"></span><span>　</span><span id="border_pt_bronze" style="font-weight: bold;"></span>
+		<br><span>【銅アイコンまであと】　　</span><span id="wins_needed_bronze" style="font-weight: bold;"></span><span>勝</span>
+		<br><span>【必要バトル数】　　　　</span><span id="battles_needed" style="font-weight: bold;"></span><span id="battle">戦</span>
+		<br><span>【勝率】　　　　　　　　　</span><span id="win_rate" style="font-weight: bold;"></span><span>％</span>
+		<br>
+		<br>
+		<label>[ボーダー設定]　　RANK
+			<select id="border-rank">
+				<option value="S1">S1</option>
+				<option value="S2">S2</option>
+				<option value="S3">S3</option>
+				<option value="S4">S4</option>
+				<option value="S5">S5</option>
+				<option value="S6">S6</option>
+				<option value="S7">S7</option>
+				<option value="S8">S8</option>
+				<option value="S9">S9</option>
+			</select>
+			BP<input type="number" id="border-BP" onkeyup="value = value.length > 3 ? value.slice(0,3): value;" max="499" size="3" />
+			<input type="button" value="設定" id="set-border">
+		</label>
+		<br>
+		<br>
+		<label>[ランク・BP設定]　RANK
+			<select id="value-rank">
+				<option value="S1">S1</option>
+				<option value="S2">S2</option>
+				<option value="S3">S3</option>
+				<option value="S4">S4</option>
+				<option value="S5">S5</option>
+				<option value="S6">S6</option>
+				<option value="S7">S7</option>
+				<option value="S8">S8</option>
+				<option value="S9">S9</option>
+			</select>
+			BP<input type="number" id="value-BP" onkeyup="value = value.length > 3 ? value.slice(0,3): value;" max="499" size="3" />
+			<input type="button" value="設定" id="set-rank-and-BP">
+		</label>
+		<br>
+		<br>
+		<label>[勝率設定]　　　　　　　　　　　　
+			<input type="number" id="value-win-rate" onkeyup="value = value.length > 3 ? value.slice(0,3): value;" max="100" size="3" />
+			<span>％　</span>
+			<input type="button" value="設定" id="set-win-rate">
+		</label>
+		<br>
+		<br>
+		<a href="https://github.com/a-asahina/compass/blob/master/README.md">つかいかた</a>
+	</div>
+	<script src="common.js"></script>
+	<script src="script.js"></script>
+	<script src="exception.js"></script>
+	<script src="plugin-after-draw.js"></script>
+</body>
+</html>
