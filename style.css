@@ -3,6 +3,28 @@
 ::placeholder {
 	color: #777;
 }
+.center-help { /*コンテンツ全てを中央に揃える*/
+	text-align: center;
+	padding: 0px 0px 20px 0px;
+	width: 90%;
+	margin: 0 auto;
+}
+
+#help-item {
+	display: none;
+	text-align: left;
+}
+
+#button-help, #button-help-close {
+	color:#ffffff;
+	background-color: #777;
+	padding:5px;
+	border-radius: 5px;
+	letter-spacing: 1px;
+	font-weight: bold;
+	margin: 0 auto;
+	border: none;
+}
 
 .flex {
 	display: -webkit-flex;
@@ -72,16 +94,16 @@
 }
 
 #border-BP, #value-BP {
-	width: 75px;
+	width: 70px;
 }
 
 #border-rank, #value-rank {
 	color: #777;
-	width: 75px;
+	width: 70px;
 }
 
 #value-win-rate {
-	width: 164px;
+	width: 155px;
 }
 
 /* ======================== smartphone ======================== */
@@ -93,7 +115,7 @@
 
 	.center { /*コンテンツ全てを中央に揃える*/
 		text-align: center;
-		padding: 20px 0;
+		padding: 10px 0;
 		width: 90%;
 		margin: 0 auto;
 	}
@@ -118,7 +140,12 @@
 	}
 
 	#win, #lose {
-		flex-grow: 3;
+		/* flex-grow: 3; */
+		width: 70px;
+	}
+
+	#win {
+
 	}
 
 	#plus, #minus {

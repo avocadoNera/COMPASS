@@ -21,6 +21,16 @@ const BPChart = new Chart(ctx, {
 
 update_value();
 
+document.getElementById("button-help").addEventListener("click", function() {
+	document.getElementById('help-item').style.display = 'inline';
+	document.getElementById('button-help').style.display = 'none';
+});
+
+document.getElementById("button-help-close").addEventListener("click", function() {
+	document.getElementById('help-item').style.display = 'none';
+	document.getElementById('button-help').style.display = 'inline';
+});
+
 //Push "plus" button
 document.getElementById("plus").addEventListener("click", function() {
 

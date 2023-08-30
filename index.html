@@ -8,7 +8,18 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
 </head>
 <body>
-	<a href="https://github.com/avocadoNera/COMPASS/blob/main/README.md">使い方</a>
+	<div class="center-help">
+		<button id="button-help">HELP</button>
+		<div id="help-item">
+			<button id="button-help-close">CLOSE</button>
+			<p>以下の項目をセットしてね！<br>
+			・ボーダー（自分が目標としているバトルポイント）<br>
+			・勝率（バトアリでどのくらい勝てるか）
+			・現在のバトルポイント<br>
+			<br>
+			セットしたら、現在のバトルポイントからボーダーに到達するまで最低何戦必要なのかや、勝率的にあと何戦必要なのかを自動計算するよ！</p>
+		</div>
+	</div>
 
 	<!-- donut chart rendering -->
 	<div id="BPChartContainer"><canvas id="BPChart"></canvas></div>
