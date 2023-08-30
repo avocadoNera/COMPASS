@@ -1,4 +1,9 @@
 /* ======================== common ======================== */
+
+::placeholder {
+	color: #777;
+}
+
 .flex {
 	display: -webkit-flex;
     display: -moz-flex;
@@ -63,6 +68,7 @@
 	border-radius: 0;
 	border: none;
 	border-bottom: 1px solid #777;
+	margin-top: auto;
 }
 
 #border-BP, #value-BP {

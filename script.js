@@ -249,6 +249,6 @@ function update_value() {
 	}
 
 	document.getElementById('win_rate').innerHTML = win_rate + "%";
-	document.getElementById('wins_needed').innerHTML = wins_needed + "勝";
+	document.getElementById('wins_needed').innerHTML = wins_needed + "戦";
 	document.getElementById('rank-and-BP').innerHTML = "S" + border_rank + "-" + border_pt;
 };
