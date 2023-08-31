@@ -1,5 +1,8 @@
 /* ======================== common ======================== */
-
+html, body {
+	margin: 0;
+	padding: 0;
+}
 ::placeholder {
 	color: #777;
 }
@@ -22,7 +25,7 @@
 	border-radius: 5px;
 	letter-spacing: 1px;
 	font-weight: bold;
-	margin: 0 auto;
+	margin-top: 15px;
 	border: none;
 }
 
@@ -54,11 +57,13 @@
     display: -ms-flex;
     display: -o-flex;
     display: flex;
+	align-items: flex-end;
 	padding: 0px 40px;
 }
 
 .flex-item {
 	padding-right: 10px;
+	height: 20px;
 }
 
 .flex-item-last {
@@ -85,7 +90,7 @@
 
 #border-BP, #border-rank, #value-rank, #value-BP, #value-win-rate {
 	position: relative;
-	font-family: inherit;
+	/* font-family: inherit; */
 	background-color: transparent;
 	border-radius: 0;
 	border: none;
@@ -95,12 +100,15 @@
 
 #border-BP, #value-BP {
 	width: 70px;
+	line-height: 19px;
+	padding: 0;
 }
 
 #border-rank, #value-rank {
 	color: #777;
 	width: 70px;
-	padding-top: 1px;
+	height: 20px;
+	
 }
 
 #value-win-rate {
@@ -117,7 +125,7 @@
 	.center { /*コンテンツ全てを中央に揃える*/
 		text-align: center;
 		padding: 10px 0;
-		width: 90%;
+		width: 95%;
 		margin: 0 auto;
 	}
 
