@@ -252,13 +252,9 @@ function update_value() {
 	console.log("ループ抜けた　cnt: "+cnt);
 	battles_needed = cnt;
 
-	if(is_win_rate_over) {
-		document.getElementById('battles_needed').innerHTML = "現在の勝率ではボーダー越えは厳しいです";
-	} else {
-		document.getElementById('battles_needed').innerHTML = battles_needed + "戦";
-	}
-
-	document.getElementById('win_rate').innerHTML = win_rate + "%";
-	document.getElementById('wins_needed').innerHTML = wins_needed + "戦";
+	if(is_win_rate_over) document.getElementById('battles_needed').innerHTML = "10000↑";
+	else                 document.getElementById('battles_needed').innerHTML = battles_needed;
+	document.getElementById('win_rate').innerHTML = win_rate;
+	document.getElementById('wins_needed').innerHTML = wins_needed;
 	document.getElementById('rank-and-BP').innerHTML = "S" + border_rank + "-" + border_pt;
 };
