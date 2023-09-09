@@ -1,0 +1,17 @@
+$bgcolor-win: #fa0;
+$bgcolor-lose: #0af;
+
+@mixin color-bgcolor ($color: #000, $background-color: #fff ) {
+	color: $color;
+	background-color: $background-color;
+}
+
+#button-help, #button-help-close {
+	@include color-bgcolor(#fff, #777);
+	padding: 10px;
+	border-radius: 5px;
+	letter-spacing: 1px;
+	font-weight: bold;
+	margin: 15px 0px 20px 0px;
+	border: none;
+}

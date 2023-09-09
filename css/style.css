@@ -40,10 +40,6 @@ html, body {
 	}
 	
 	.flex {
-		display: -webkit-flex;
-		display: -moz-flex;
-		display: -ms-flex;
-		display: -o-flex;
 		display: flex;
 		justify-content:space-around;
 		padding: 0px 30px;
@@ -52,20 +48,12 @@ html, body {
 	}
 	
 	.flex2 {
-		display: -webkit-flex;
-		display: -moz-flex;
-		display: -ms-flex;
-		display: -o-flex;
 		display: flex;
 		justify-content:space-between;
 		padding: 0px 40px;
 	}
 	
 	.flex3 {
-		display: -webkit-flex;
-		display: -moz-flex;
-		display: -ms-flex;
-		display: -o-flex;
 		display: flex;
 		align-items: flex-end;
 		padding: 0px 40px;
@@ -199,10 +187,6 @@ html, body {
 	}
 
 	.flex {
-		display: -webkit-flex;
-		display: -moz-flex;
-		display: -ms-flex;
-		display: -o-flex;
 		display: flex;
 		justify-content:space-around;
 		padding: 0px 30px;
@@ -211,20 +195,12 @@ html, body {
 	}
 	
 	.flex2 {
-		display: -webkit-flex;
-		display: -moz-flex;
-		display: -ms-flex;
-		display: -o-flex;
 		display: flex;
 		justify-content:space-between;
 		padding: 0px 40px;
 	}
 	
 	.flex3 {
-		display: -webkit-flex;
-		display: -moz-flex;
-		display: -ms-flex;
-		display: -o-flex;
 		display: flex;
 		align-items: flex-end;
 		padding: 0px 40px;

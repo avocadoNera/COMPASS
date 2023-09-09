@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAQA,gCAAiC;EAJhC,KAAK,EAKkB,IAAI;EAJ3B,gBAAgB,EAIa,IAAI;EACjC,OAAO,EAAE,IAAI;EACb,aAAa,EAAE,GAAG;EAClB,cAAc,EAAE,GAAG;EACnB,WAAW,EAAE,IAAI;EACjB,MAAM,EAAE,iBAAiB;EACzB,MAAM,EAAE,IAAI",
+"sources": ["scssstyle.scss"],
+"names": [],
+"file": "nicestyle.css"
+}
