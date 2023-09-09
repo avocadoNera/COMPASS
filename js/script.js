@@ -22,12 +22,12 @@ const BPChart = new Chart(ctx, {
 update_value();
 
 document.getElementById("button-help").addEventListener("click", function() {
-	document.getElementById('help-item').style.display = 'inline';
+	document.getElementById('help-content-close').style.display = 'inline';
 	document.getElementById('button-help').style.display = 'none';
 });
 
 document.getElementById("button-help-close").addEventListener("click", function() {
-	document.getElementById('help-item').style.display = 'none';
+	document.getElementById('help-content-close').style.display = 'none';
 	document.getElementById('button-help').style.display = 'inline';
 });
 
@@ -131,8 +131,8 @@ document.getElementById("set-border").addEventListener("click", function() {
 //push "rank-and-BP" button
 document.getElementById("set-rank-and-BP").addEventListener("click", function() {
 
-	let input_rank = document.getElementById('value-rank');
-	let input_BP   = document.getElementById('value-BP');
+	let input_rank = document.getElementById('now-rank');
+	let input_BP   = document.getElementById('now-BP');
 
 	let check_rank = parseInt(input_rank.value.slice(1));
 	let check_BP   = parseInt(input_BP.value);

@@ -1,128 +1,5 @@
-/* ======================== common ======================== */
-html, body {
-	margin: 0;
-	padding: 0;
-}
-
-::placeholder {
-	color: #777;
-}
-
-.center-help { /*コンテンツ全てを中央に揃える*/
-	text-align: center;
-	padding: 0px 0px 20px 0px;
-	width: 90%;
-	margin: 0 auto;
-}
-
-#help-item {
-	display: none;
-	text-align: left;
-}
-
-
 /* ======================== smartphone ======================== */
 @media screen and (max-width: 400px) {
-
-	html {
-		font-size: 14px;
-	}
-
-	#button-help, #button-help-close {
-		color:#ffffff;
-		background-color: #777;
-		padding:5px;
-		border-radius: 5px;
-		letter-spacing: 1px;
-		font-weight: bold;
-		margin-top: 15px;
-		border: none;
-	}
-	
-	.flex {
-		display: flex;
-		justify-content:space-around;
-		padding: 0px 30px;
-		margin: 0px 0px 20px 0px;
-		height: 25px;
-	}
-	
-	.flex2 {
-		display: flex;
-		justify-content:space-between;
-		padding: 0px 40px;
-	}
-	
-	.flex3 {
-		display: flex;
-		align-items: flex-end;
-		padding: 0px 40px;
-	}
-	
-	.flex-item {
-		padding-right: 10px;
-		height: 20px;
-	}
-	
-	.flex-item-last {
-		flex-grow: 0;
-		margin-left: auto;
-	}
-	
-	.item {
-		color: #f00;
-	}
-	
-	#set-win-rate, #set-rank-and-BP, #set-border {
-		background-color: #000;
-		display: inline-block;
-		transition: background-color 0.3s ease;
-		color: #fff;
-		font-weight: bold;
-		letter-spacing: 1px;
-		border-radius: 5px;
-		border: none;
-		padding: 5px 10px;
-		margin-left: auto;
-	}
-	
-	#border-BP, #border-rank, #value-rank, #value-BP, #value-win-rate {
-		position: relative;
-		background-color: transparent;
-		border-radius: 0;
-		border: none;
-		border-bottom: 1px solid #777;
-		margin-top: auto;
-	}
-	
-	#border-BP, #value-BP {
-		width: 70px;
-		line-height: 19px;
-		padding: 0;
-	}
-	
-	#border-rank, #value-rank {
-		color: #777;
-		width: 70px;
-		height: 20px;
-		
-	}
-	
-	#value-win-rate {
-		width: 155px;
-	}
-
-	.center { /*コンテンツ全てを中央に揃える*/
-		text-align: center;
-		padding: 10px 0;
-		width: 95%;
-		margin: 0 auto;
-	}
-
-	#BPChartContainer {
-		max-width: 700px;
-		margin: 0 auto;
-	}
 
 	#win, #lose, #plus, #minus {
 		display: inline-block;
@@ -134,122 +11,16 @@ html, body {
 		border-radius: 5px;
 		border: none;
 		margin: 0px 5px 0px 5px;
-		/* padding: 10px 20px; */
-		/* margin: 5px 5px 40px 10px; */
 	}
 
-	#win, #lose {
-		/* flex-grow: 3; */
-		width: 70px;
-	}
-
-	#plus, #minus {
-		width: 25px;
-
-	}
-
-	#win {background-color: #fa0;}
-	#win:hover {background-color: #f80;}
-
-	#plus {
-		background-color: #fa0;
-	}
-	#plus:hover {background-color: #f80;}
-
-	#lose {background-color: #0af;}
-	#lose:hover {background-color: #08f;}
-
-	#minus {
-		background-color: #0af;
-	}
-	#minus:hover {background-color: #08f;}
-
-	label {
-		display: inline;
-		align-items: center;
-	}
-
-	/* #border-BP, #value-BP, #value-win-rate {
-		width: 3em;
-	} */
+	#win, #lose {width: 70px;}
+	#plus, #minus {width: 25px;}
 
 }
 
 /* ======================== tablet ======================== */
 @media screen and (min-width: 401px) and (max-width: 1024px) {
 
-	html {
-		font-size: 20px; 
-	}
-
-	.center-help {
-		padding: 0px;
-	}
-
-	.flex {
-		display: flex;
-		justify-content:space-around;
-		padding: 0px 30px;
-		margin: 0px 0px 20px 0px;
-		height: 40px;
-	}
-	
-	.flex2 {
-		display: flex;
-		justify-content:space-between;
-		padding: 0px 40px;
-	}
-	
-	.flex3 {
-		display: flex;
-		align-items: flex-end;
-		padding: 0px 40px;
-	}
-	
-	.flex-item {
-		padding-right: 10px;
-		height: 20px;
-	}
-	
-	.flex-item-last {
-		flex-grow: 0;
-		margin-left: auto;
-	}
-	
-	.item {
-		color: #f00;
-	}
-
-	#BPChartContainer {
-		max-width: 600px;
-		margin: 0 auto;
-		padding-bottom: 15px;
-	}
-
-	#button-help, #button-help-close {
-		color:#ffffff;
-		background-color: #777;
-		padding:10px;
-		border-radius: 5px;
-		letter-spacing: 1px;
-		font-weight: bold;
-		margin: 15px 0px 20px 0px;
-		border: none;
-	}
-
-	#set-win-rate, #set-rank-and-BP, #set-border {
-		background-color: #000;
-		display: inline-block;
-		transition: background-color 0.3s ease;
-		color: #fff;
-		font-weight: bold;
-		letter-spacing: 1px;
-		border-radius: 5px;
-		border: none;
-		padding: 5px 10px;
-		margin-left: auto;
-	}
-
 	#win, #lose, #plus, #minus {
 		display: inline-block;
 		transition: background-color 0.3s ease;
@@ -260,111 +31,20 @@ html, body {
 		border-radius: 5px;
 		border: none;
 		margin: 0px 5px 0px 5px;
-		/* padding: 10px 20px; */
-		/* margin: 5px 5px 40px 10px; */
 	}
 
-	#win, #lose {
-		/* flex-grow: 3; */
-		width: 70px;
-	}
-
-	#plus, #minus {
-		width: 40px;
-
-	}
-
-	#win {background-color: #fa0;}
-	#win:hover {background-color: #f80;}
-
-	#plus {
-		background-color: #fa0;
-	}
-	#plus:hover {background-color: #f80;}
-
-	#lose {background-color: #0af;}
-	#lose:hover {background-color: #08f;}
-
-	#minus {
-		background-color: #0af;
-	}
-	#minus:hover {background-color: #08f;}
-
-
-
-
-
+	#win, #lose {width: 70px;}
+	#plus, #minus {width: 40px;}
 }
 
 /* ======================== pc ======================== */
 @media screen and (min-width: 1024px) {
 
-	#button-help, #button-help-close {
-		color:#ffffff;
-		background-color: #777;
-		padding:10px;
-		border-radius: 5px;
-		letter-spacing: 1px;
-		font-weight: bold;
-		margin: 15px 0px 20px 0px;
-		border: none;
-	}
-
-	.flex-pc {
-		display: -webkit-flex;
-		display: -moz-flex;
-		display: -ms-flex;
-		display: -o-flex;
-		display: flex;
-		justify-content: space-around;
-	}
-
-	.flex2 {
-		background-color: rgba(202, 140, 23, 0.3);
-		flex-grow: 1;
-		padding: 10px 10px 0px 10px;
-		margin: 5px;
-	}
-
-	.item {
-		font-size: 20px;
-		border-bottom: 1px solid #777;
-	}
-
-	#rank-and-BP, #win_rate, #wins_needed, #battles_needed {
-		font-weight: bold;
-		font-size: 30px;
-		padding: 5px 0px 5px 0px;
-	}
-
-	#win_rate::after {
-		content: "%";
-		font-size: 20px;
-	}
-
-	#wins_needed::after, #battles_needed::after {
-		content: "戦";
-		font-size: 20px;
-	}
-
-	.center {
-		text-align: center;
-		padding: 40px 0;
-		width: 80%;
-		margin: 0 auto;
-	}
-
-	#BPChartContainer {
-		max-width: 550px;
-		margin: 0 auto;
-	}
-
 	#win {
 		display: inline-block;
 		padding: 10px 20px;
-		margin: 5px 5px 40px 10px;
+		margin: 0px;
 		border: none;
-		background-color: #fa0;
 		color: #fff;
 		font-size: 2vw;
 		font-weight: bold;
@@ -376,16 +56,11 @@ html, body {
 		transition: background-color 0.3s ease;
 		cursor: pointer;
 		width: 15%;
-	}
-	
-	#win:hover {
-		background-color: #f80;
 	}
 
 	#plus {
 		display: inline-block;
 		border: none;
-		background-color: #fa0;
 		color: #fff;
 		font-size: 2vw;
 		font-weight: bold;
@@ -399,17 +74,12 @@ html, body {
 		width: 4%;
 		padding: 5px;
 	}
-	
-	#plus:hover {
-		background-color: #f80;
-	}
 
 	#lose {
 		display: inline-block;
 		padding: 10px 20px;
-		margin: 5px 10px 40px;
+		margin: 0px;
 		border: none;
-		background-color: #0af;
 		color: #fff;
 		font-size: 2vw;
 		font-weight: bold;
@@ -422,15 +92,10 @@ html, body {
 		cursor: pointer;
 		width: 15%;
 	}
-	
-	#lose:hover {
-		background-color: #08f;
-	}
 
 	#minus {
 		display: inline-block;
 		border: none;
-		background-color: #0af;
 		color: #fff;
 		font-size: 2vw;
 		font-weight: bold;
@@ -443,31 +108,6 @@ html, body {
 		cursor: pointer;
 		width: 4%;
 		padding: 5px;
-	}
-	
-	#minus:hover {
-		background-color: #08f;
-	}
-
-	label {
-		display: inline;
-		align-items: center;
-	}
-
-	input [type="number"] {
-		margin: 0px 20px 0px 5px;
-	}
-
-	input [type="number"] #value-win-rate {
-		margin: 0px 0px 0px 5px;
-	}
-	
-	select {
-		margin: 0px 20px 0px 5px;
-	}
-
-	#border-BP, #value-BP, #value-win-rate {
-		width: 3em;
 	}
 
 }

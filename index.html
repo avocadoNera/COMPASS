@@ -4,13 +4,14 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
 	<title>compass</title>
+	<link rel="stylesheet" href="css/template.css">
 	<link rel="stylesheet" href="css/style.css">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
 </head>
 <body>
 	<div class="center-help">
 		<button id="button-help">HELP</button>
-		<div id="help-item">
+		<div id="help-content-close">
 			<button id="button-help-close">CLOSE</button>
 			<p>以下の項目をセットしてね！
 			<br>
@@ -33,36 +34,34 @@
 
 	<div class="center">
 
-		<div class="flex">
+		<div class="flex-BP-updown-buttons">
 			<button id="plus">+</button>
 			<button id="win">WIN</button>
 			<button id="lose">LOSE</button>
 			<button id="minus">-</button>
 		</div>
 
-		<div class="flex-pc">
-			<div class="flex2">
-				<div class="item">ボーダーの設定値</div>
-				<div id="rank-and-BP"></div>
-			</div>
-			<div class="flex2">
-				<div class="item">勝率の設定値</div>
-				<div id="win_rate"></div>
-			</div>
-			<div class="flex2">
-				<div class="item">最低あと何戦？</div>
-				<div id="wins_needed"></div>
-			</div>
-			<div class="flex2">
-				<div class="item">勝率的にあと何戦？</div>
-				<div id="battles_needed"></div>
-			</div>
+		<div class="flex-results">
+			<div class="red-text">ボーダーの設定値</div>
+			<div id="rank-and-BP"></div>
+		</div>
+		<div class="flex-results">
+			<div class="red-text">勝率の設定値</div>
+			<div id="win_rate"></div>
+		</div>
+		<div class="flex-results">
+			<div class="red-text">最低あと何戦？</div>
+			<div id="wins_needed"></div>
+		</div>
+		<div class="flex-results">
+			<div class="red-text">勝率的にあと何戦？</div>
+			<div id="battles_needed"></div>
 		</div>
 
 		<br>
 		<p>ボーダー設定</p>
 		<label>
-			<div class="flex3">
+			<div class="flex-settings">
 				<div class="flex-item">
 					<select id="border-rank">
 						<option value="" hidden disabled selected>RANK</option>
@@ -88,9 +87,9 @@
 		<br>
 		<p>ランク・BP設定</p>
 		<label>
-			<div class="flex3">
+			<div class="flex-settings">
 				<div class="flex-item">
-					<select id="value-rank">
+					<select id="now-rank">
 						<option value="" hidden disabled selected>RANK</option>
 						<option value="S1">S1</option>
 						<option value="S2">S2</option>
@@ -104,7 +103,7 @@
 					</select>
 				</div>
 				<div class="flex-item">
-					<input type="number" id="value-BP" placeholder="BP" onkeyup="value = value.length > 3 ? value.slice(0,3): value;" max="499" size="3" />
+					<input type="number" id="now-BP" placeholder="BP" onkeyup="value = value.length > 3 ? value.slice(0,3): value;" max="499" size="3" />
 				</div>
 				<div class="flex-item-last">
 					<input type="button" value="SET" id="set-rank-and-BP">
@@ -114,7 +113,7 @@
 		<br>
 		<p>勝率設定(%)</p>
 		<label>
-			<div class="flex3">
+			<div class="flex-settings">
 				<div class="flex-item">
 					<input type="number" id="value-win-rate" placeholder="1~100" onkeyup="value = value.length > 3 ? value.slice(0,3): value;" max="100" size="3" />
 				</div>

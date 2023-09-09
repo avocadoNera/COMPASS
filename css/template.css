@@ -1,0 +1,118 @@
+/* 00.common */
+
+	html, body {margin: 0;padding: 0;font-size: 16px;font-family: 'メイリオ', 'Meiryo'}
+	@media screen and (min-width:  401px) and (max-width: 1024px) {html, body {font-size: 18px;}}
+	@media screen and (min-width: 1024px)                         {html, body {font-size: 22px;}}
+
+	.center {margin: 0 auto;padding: 10px 0;text-align: center;width: 95%;}
+
+
+/* 01.help */
+
+	.center-help {padding: 5px 0px 20px 20px;width: 90%;}
+	
+	#help-content-close {display: none;text-align: left;}
+
+	#button-help, #button-help-close {
+		color:#ffffff;
+		background-color: #777;
+		padding:5px;
+		border-radius: 5px;
+		letter-spacing: 1px;
+		font-weight: bold;
+		margin-top: 15px;
+		border: none;
+	}
+
+
+/* 02.BPchart */
+
+	@media screen and (max-width:  400px)                         {#BPChartContainer {max-width: 350px;margin: 0 auto;}}
+	@media screen and (min-width:  401px) and (max-width: 1024px) {#BPChartContainer {max-width: 450px;margin: 0 auto;}}
+	@media screen and (min-width: 1024px)                         {#BPChartContainer {max-width: 550px;margin: 0 auto;}}
+
+
+/* 03.BP_updown_buttons */
+
+	#win,        #plus        {background-color: #fa0;}
+	#win:hover,  #plus:hover  {background-color: #f80;}
+	#lose,       #minus       {background-color: #0af;}
+	#lose:hover, #minus:hover {background-color: #08f;}
+
+	.flex-BP-updown-buttons {margin: 0px 0px 20px 0px;padding: 0px 30px;display: flex;justify-content:space-around;}
+	@media screen and (max-width:  400px)                         {.flex-BP-updown-buttons {height: 30px;}}
+	@media screen and (min-width:  401px) and (max-width: 1024px) {.flex-BP-updown-buttons {height: 40px;}}
+	@media screen and (min-width: 1024px)                         {.flex-BP-updown-buttons {height: 60px;}}
+
+/* 04.results */
+
+	.red-text {color: #f00;}
+
+	#win_rate::after {content: "%";}
+	#wins_needed::after, #battles_needed::after {content: "戦";}
+	
+	.flex-results {
+		display: flex;
+		justify-content:space-between;
+		padding: 0px 40px;
+	}
+	
+
+	/* set_buttons */
+	#set-win-rate, #set-rank-and-BP, #set-border {
+		margin-left: auto;
+		padding: 5px 10px;
+		background-color: #000;
+		display: inline-block;
+		transition: background-color 0.3s ease;
+		color: #fff;
+		font-weight: bold;
+		letter-spacing: 1px;
+		border-radius: 5px;
+		border: none;
+	}
+
+	/* inputs */
+	#border-BP, #border-rank, #now-BP, #now-rank, #value-win-rate {
+		position: relative;
+		background-color: transparent;
+		border-radius: 0;
+		border: none;
+		border-bottom: 1px solid #777;
+		margin-top: auto;
+		color: #777;
+	}
+
+	@media screen and (max-width:  400px) {
+		#border-rank, #now-rank {width:  70px;height: 20px;}
+		#border-BP, #now-BP     {width:  70px;line-height: 19px;padding: 0;}
+		#value-win-rate         {width: 148px;}}
+	@media screen and (min-width:  401px) and (max-width: 1024px) {
+		#border-rank, #now-rank {width: 115px;height: 20px;}
+		#border-BP, #now-BP     {width: 115px;line-height: 19px;padding: 0;}
+		#value-win-rate         {width: 238px;}}
+	@media screen and (min-width: 1024px) {
+		#border-rank, #now-rank {width: 300px;height: 20px;}
+		#border-BP, #now-BP     {width: 300px;line-height: 19px;padding: 0;}
+		#value-win-rate         {width: 455px;}}
+
+
+/* 05.settings */
+
+	.flex-settings {
+		display: flex;
+		align-items: flex-end;
+		padding: 0px 40px;
+	}
+
+	.flex-item {
+		padding-right: 10px;
+		height: 20px;
+	}
+	
+	.flex-item-last {
+		flex-grow: 0;
+		margin-left: auto;
+	}
+
+	::placeholder {color: #777;}
