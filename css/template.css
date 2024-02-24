@@ -1,8 +1,7 @@
 /* 00.common */
 
 	html, body {margin: 0;padding: 0;font-size: 16px;font-family: 'メイリオ', 'Meiryo'}
-	@media screen and (min-width:  401px) and (max-width: 1024px) {html, body {font-size: 18px;}}
-	@media screen and (min-width: 1024px)                         {html, body {font-size: 22px;}}
+	@media screen and (min-width:  401px) {html, body {font-size: 18px;}}
 
 	.center {margin: 0 auto;padding: 10px 0;text-align: center;width: 95%;}
 
@@ -27,9 +26,8 @@
 
 /* 02.BPchart */
 
-	@media screen and (max-width:  400px)                         {#BPChartContainer {max-width: 350px;margin: 0 auto;}}
-	@media screen and (min-width:  401px) and (max-width: 1024px) {#BPChartContainer {max-width: 450px;margin: 0 auto;}}
-	@media screen and (min-width: 1024px)                         {#BPChartContainer {max-width: 550px;margin: 0 auto;}}
+	@media screen and (max-width:  400px) {#BPChartContainer {max-width: 350px;margin: 0 auto;}}
+	@media screen and (min-width:  401px) {#BPChartContainer {max-width: 450px;margin: 0 auto;}}
 
 
 /* 03.BP_updown_buttons */
@@ -40,9 +38,8 @@
 	#lose:hover, #minus:hover {background-color: #08f;}
 
 	.flex-BP-updown-buttons {margin: 0px 0px 20px 0px;padding: 0px 30px;display: flex;justify-content:space-around;}
-	@media screen and (max-width:  400px)                         {.flex-BP-updown-buttons {height: 30px;}}
-	@media screen and (min-width:  401px) and (max-width: 1024px) {.flex-BP-updown-buttons {height: 40px;}}
-	@media screen and (min-width: 1024px)                         {.flex-BP-updown-buttons {height: 60px;}}
+	@media screen and (max-width:  400px) {.flex-BP-updown-buttons {height: 30px;}}
+	@media screen and (min-width:  401px) {.flex-BP-updown-buttons {height: 40px;}}
 
 /* 04.results */
 
@@ -87,14 +84,10 @@
 		#border-rank, #now-rank {width:  70px;height: 20px;}
 		#border-BP, #now-BP     {width:  70px;line-height: 19px;padding: 0;}
 		#value-win-rate         {width: 148px;}}
-	@media screen and (min-width:  401px) and (max-width: 1024px) {
+	@media screen and (min-width:  401px) {
 		#border-rank, #now-rank {width: 115px;height: 20px;}
 		#border-BP, #now-BP     {width: 115px;line-height: 19px;padding: 0;}
 		#value-win-rate         {width: 238px;}}
-	@media screen and (min-width: 1024px) {
-		#border-rank, #now-rank {width: 300px;height: 20px;}
-		#border-BP, #now-BP     {width: 300px;line-height: 19px;padding: 0;}
-		#value-win-rate         {width: 455px;}}
 
 
 /* 05.settings */

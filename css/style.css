@@ -19,7 +19,7 @@
 }
 
 /* ======================== tablet ======================== */
-@media screen and (min-width: 401px) and (max-width: 1024px) {
+@media screen and (min-width: 401px) {
 
 	#win, #lose, #plus, #minus {
 		display: inline-block;
